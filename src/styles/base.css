@@ -23,6 +23,16 @@
     src: url('../fonts/JuliusSansOne-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width: 860px) {
+    .about {
+         flex-direction: column;
+         & img {
+             min-width: 60vw;
+         }
+     }
+     
+ }
+
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', system-ui;
