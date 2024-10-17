@@ -1,0 +1,107 @@
+.contacts {
+    min-height: 25vh;
+    background-image: var(---black-overlay), url('/src/img/matcha-latte.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contacts-wrapper {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    & h2 {
+        font-family: 'Kaisei';
+    }
+}
+
+.shop-info {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.071);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+
+    & p {
+        font-style: italic;
+    }
+
+    & img {
+        width: 4rem;
+        box-shadow: none;
+    }
+}
+
+.info {
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & button {
+        width: 6rem;
+        align-self: flex-end;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(---brown);
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+
+    & button:hover {
+        font-weight: bold;
+    }
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    
+}
+
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+}
+
+#message {
+    height: 20vh;
+    resize: none;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+#social-media {
+    margin: 40px auto;
+    text-align: center;
+    & h2 {
+        font-family: 'Kaisei';
+    }
+}
+
+#social-media img {
+    width: 2rem;
+    box-shadow: none;
+}
+
+#social-media img:hover {
+    scale: 120%;
+}

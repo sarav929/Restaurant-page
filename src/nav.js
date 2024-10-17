@@ -3,6 +3,7 @@ import logo from './img/logo.png'
 
 import createHomePage from './home'
 import createFooter from './footer'
+import createContacts from './contacts'
 import createMenuPage from './menu'
 
 const createNav = () => {
@@ -50,13 +51,14 @@ const createNav = () => {
         body.innerHTML = ''
         createNav()
         createMenuPage()
+        createMenuPage()
         createFooter()
     })
 
     contactsBtn.addEventListener('click', () => {
         body.innerHTML = ''
         createNav()
-
+        createContacts()
         createFooter()
     })
 
