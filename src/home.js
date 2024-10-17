@@ -3,8 +3,6 @@ import './styles/home.css'
 
 import barista from './img/barista.jpg'
 
- 
-
 function createHeader() {
     const header = document.createElement('header')
     const body = document.querySelector('body')
