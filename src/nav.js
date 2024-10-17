@@ -3,6 +3,7 @@ import logo from './img/logo.png'
 
 import createHomePage from './home'
 import createFooter from './footer'
+import createMenuPage from './menu'
 
 const createNav = () => {
     const body = document.querySelector('body')
@@ -48,7 +49,7 @@ const createNav = () => {
     menuBtn.addEventListener('click', () => {
         body.innerHTML = ''
         createNav()
-
+        createMenuPage()
         createFooter()
     })
 
