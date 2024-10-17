@@ -1,0 +1,75 @@
+.welcome {
+    width: 100vw;
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 4rem;
+    background-image: var(---black-overlay), url('../img/interior.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    background-position: center;
+    text-shadow: var(---text-shadow);
+    
+
+    & h1 {
+        font-family: 'Julius', system-ui;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    & h2 {
+        font-family: 'Julius', system-ui;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    & h3 {
+        font-family: 'Kaisei', system-ui;
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: lighter;
+    }
+}
+
+.banner-divider {
+    width: 50vw;
+    border: 1px solid white;
+    margin: 20px;
+}
+
+.about {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 2rem 0;
+
+    & h1 {
+        margin: 0;
+        font-size: 2.3;
+        letter-spacing: .2rem;
+        text-wrap: nowrap;
+    }
+
+    & .about-us {
+        font-family: 'Julius', system-ui;
+        font-size: 2.5rem;
+        
+    }
+}
+
+.about-img {
+    max-width: 40%;
+}
+
