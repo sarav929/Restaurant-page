@@ -1,5 +1,6 @@
 import './styles/base.css'
 import './styles/menu.css'
+
 import gallery1 from './img/gallery1.jpg'
 import gallery2 from './img/gallery2.jpg'
 import gallery3 from './img/gallery3.jpg'
@@ -9,9 +10,26 @@ import gallery4 from './img/gallery4.jpg'
 const createMenuPage = () => {
 
     const body = document.querySelector('body')
+
+    const header = document.createElement('header')
+    header.setAttribute('class', 'menu banner')
+    body.appendChild(header)
+
+    const h1 = document.createElement('h1')
+    h1.setAttribute('class', 'page-h1')
+    h1.textContent = "Menu"
+    header.appendChild(h1)
+    
+
+    const h2 = document.createElement('h2')
+    h2.setAttribute('class', 'page-h2')
+    h2.textContent = "メニュー"
+    header.appendChild(h2)
+
     const main = document.createElement('main')
     body.appendChild(main)
 
+    
     const description = document.createElement('p')
     description.setAttribute('class', 'page-descr')
     description.innerText = 'Discover Kiyomi Café’s menu, where Japanese tradition meets contemporary café culture offering unique coffee blends, artisan teas, and pastries with a modern twist.'
@@ -36,7 +54,6 @@ const createMenuPage = () => {
     custList.innerHTML = "<li>add:<br>vanilla, hazelnut, pistachio, yuzu, cream</li><li>dairy free:<br>soya, oat, almond, coconut, vegan cream</li>"
     custom.appendChild(h4)
     custom.appendChild(custList)
-    container.appendChild(custom)
 
     const div2 = document.createElement('div')
     container.appendChild(div2)
@@ -58,6 +75,7 @@ const createMenuPage = () => {
     
     div1.appendChild(coffee)
     div1.appendChild(list1)
+    div1.appendChild(custom)
 
     div2.appendChild(drinks)
     div2.appendChild(list2)
@@ -65,7 +83,9 @@ const createMenuPage = () => {
     div2.appendChild(bakery)
     div2.appendChild(list3)
 
-    main.appendChild(divider)
+    const divider2 = document.createElement('div')
+    divider2.setAttribute('class', 'page-divider')
+    main.appendChild(divider2)
 
     const gallery = document.createElement('div')
     gallery.setAttribute('class', 'photo-gallery')
@@ -84,7 +104,6 @@ const createMenuPage = () => {
     gallery.appendChild(img2)
     gallery.appendChild(img3)
     gallery.appendChild(img4)
-
 }
 
 export default createMenuPage
