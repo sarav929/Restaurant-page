@@ -1,5 +1,5 @@
 import './styles/base.css'
-import './styles/menu.css'
+import './styles/contacts.css'
 
 import bunny from './img/black-bunny.png'
 import insta from './img/instagram.png'
@@ -40,6 +40,7 @@ const createContacts = () => {
     main.appendChild(divider)
 
     const wrapper = document.createElement('wrapper')
+    wrapper.setAttribute('class', 'contacts-wrapper')
     main.appendChild(wrapper)
 
     const info = document.createElement('wrapper')
