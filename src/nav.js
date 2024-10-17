@@ -51,6 +51,7 @@ const createNav = () => {
         body.innerHTML = ''
         createNav()
         createMenuPage()
+        createMenuPage()
         createFooter()
     })
 
