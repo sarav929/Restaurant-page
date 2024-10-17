@@ -2,8 +2,11 @@ import './styles/base.css'
 import logo from './img/logo.png'
 
 const createNav = () => {
+    const body = document.querySelector('body')
+    const nav = document.createElement('nav')
 
-    const nav = document.querySelector('nav')
+    body.appendChild(nav)
+
     
     const logoDiv = document.createElement('div')
     logoDiv.setAttribute('id', 'logo')
