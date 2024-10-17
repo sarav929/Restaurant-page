@@ -1,6 +1,9 @@
 import './styles/base.css'
 import logo from './img/logo.png'
 
+import createHomePage from './home'
+import createFooter from './footer'
+
 const createNav = () => {
     const body = document.querySelector('body')
     const nav = document.createElement('nav')
@@ -34,6 +37,29 @@ const createNav = () => {
 
     nav.appendChild(logoDiv)
     nav.appendChild(navBtns)
+
+    homeBtn.addEventListener('click', () => {
+        body.innerHTML = ''
+        createNav()
+        createHomePage()
+        createFooter()
+    })
+
+    menuBtn.addEventListener('click', () => {
+        body.innerHTML = ''
+        createNav()
+
+        createFooter()
+    })
+
+    contactsBtn.addEventListener('click', () => {
+        body.innerHTML = ''
+        createNav()
+
+        createFooter()
+    })
+
+
 }
 
 export default createNav
