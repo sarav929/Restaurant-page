@@ -23,7 +23,7 @@
     src: url('../fonts/JuliusSansOne-Regular.ttf') format('truetype');
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1100px) {
     .about {
          flex-direction: column;
          & img {
