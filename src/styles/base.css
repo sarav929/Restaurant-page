@@ -27,11 +27,24 @@
     .about {
          flex-direction: column;
          & img {
-             min-width: 60vw;
+             min-width: 80vw;
          }
-     }
-     
- }
+    }
+
+}
+
+@media screen and (max-width: 700px) { 
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav button {
+        font-size: .8rem;
+    }
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -59,11 +72,11 @@ nav {
     width: 80vw;
     margin: auto;
     padding: 20px 0px;
+}
 
-    & #nav-btns {
-        display: flex;
-        gap: 5rem;
-    }
+#nav-btns {
+    display: flex;
+    width: fit-content;
 
     & button {
         background-color: transparent;
@@ -79,9 +92,14 @@ nav {
     }
 }
 
+#home-btn,#menu-btn {
+    margin-right: 30px;
+}
+
 #kiyomi-logo {
-    max-width: 20vw;
+    max-width: 15vw;
     box-shadow: none;
+    min-width: 130px;
 }
 
 main {
