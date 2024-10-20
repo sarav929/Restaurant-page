@@ -155,6 +155,7 @@ footer {
 }
 
 .page-h2 {
+    font-family: 'Kurenaido', system-ui;
     font-weight: lighter;
     margin: 0;
     text-shadow: var(---text-shadow);
