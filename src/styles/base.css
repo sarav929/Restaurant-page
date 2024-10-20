@@ -23,7 +23,7 @@
     src: url('../fonts/JuliusSansOne-Regular.ttf') format('truetype');
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1100px) {
     .about {
          flex-direction: column;
          & img {
@@ -155,6 +155,7 @@ footer {
 }
 
 .page-h2 {
+    font-family: 'Kurenaido', system-ui;
     font-weight: lighter;
     margin: 0;
     text-shadow: var(---text-shadow);
