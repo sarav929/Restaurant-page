@@ -50,6 +50,11 @@
     gap: 30px;
 }
 
+.about p {
+    font-size: 1.3rem;
+    text-wrap: pretty;
+}
+
 .about-title {
     display: flex;
     align-items: center;
